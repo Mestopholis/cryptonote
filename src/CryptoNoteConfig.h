@@ -24,7 +24,7 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 //TODO Specify total number of available coins
 //TODO ((uint64_t)(-1)) equals to 18446744073709551616 coins
 //TODO or you can define number explicitly UINT64_C(858986905600000000)
-const uint64_t MONEY_SUPPLY                                  = ((uint64_t)(-1));
+const uint64_t MONEY_SUPPLY                                  = UINT64_C(184467440737095);
 const unsigned EMISSION_SPEED_FACTOR                         = 18;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
@@ -74,7 +74,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 //TODO Put here the name of your currency
 const char     CRYPTONOTE_NAME[]                             = "tritanium";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff0001ffffffffffff0f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101d8344df427e428dbe6a9bf2b87d6deaf138d21725437c8c49dffc201c0bbeba5";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff000191d6c5cf02029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121014ab44cd7ac2793b6f2c601845ff87fc2e91837b02871151894812ceddae3aca6";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
